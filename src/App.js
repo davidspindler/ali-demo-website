@@ -46,6 +46,13 @@ function App() {
         </div>
 
         <div className="blue-back"></div>
+        <div
+          className="alternate-gray-back"
+          style={{
+            transform: `translateY(${offsetY * 0.15}px)`,
+            transition: "1s",
+          }}
+        ></div>
         <div className="pink-back"></div>
         <div className="pink-back"></div>
         <div
