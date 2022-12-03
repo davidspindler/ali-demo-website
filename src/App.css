@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "oswald";
+  src: url(../public/fonts/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "pos";
+  src: url(../public/fonts/Poppins-ExtraLight.ttf);
+}
+
 .App {
   text-align: center;
   /* max-width: 1100px; */
@@ -11,9 +20,12 @@
   pointer-events: none;
 }
 .gray-back {
+  margin-top: 100px;
   background-color: #eceae8;
   width: 80vw;
   height: 30vh;
+  z-index: -100;
+  position: relative;
 
   display: block;
   margin-left: auto;
@@ -53,4 +65,42 @@
   /* background-attachment: fixed; */
   /* margin: 0; */
   /* padding: 0; */
+}
+img {
+  z-index: 999 !important;
+}
+.filmWheelAndAboutMe {
+  display: flex;
+  /* border: 3px solid blue; */
+  justify-content: space-around;
+  margin-bottom: 100px;
+  text-align: left;
+  color: #001a66;
+}
+.filmWheelPic {
+  /* border: 3px solid red; */
+  width: 50%;
+  margin-top: -300px;
+}
+.aboutMe {
+  /* border: 3px solid orange; */
+  margin-top: -300px;
+  width: 800px;
+}
+.aboutMeHeaderText {
+  /* font-weight: 600; */
+  /* font-family: pos; */
+  font-weight: 600;
+  font-size: 60px;
+}
+div {
+  font-family: sans-serif;
+}
+.aboutMeDescription {
+  margin-top: 40px;
+  font-family: pos;
+  font-weight: 200;
+}
+.oswald {
+  font-family: oswald;
 }
