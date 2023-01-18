@@ -7,11 +7,22 @@
   src: url(../public/fonts/Poppins-ExtraLight.ttf);
 }
 
+/* @font-face {
+  font-family: ultra;
+  src: url(../public/Ultra-Regular.ttf);
+}
+@font-face {
+  font-family: ptSerif;
+  src: url(../public/PTSerif-Regular.ttf);
+} */
+
 .App {
   text-align: center;
   /* max-width: 1100px; */
   margin: auto;
   overflow: auto;
+  position: relative;
+
   /* padding: 0 2rem; */
 }
 
@@ -21,7 +32,7 @@
 }
 .gray-back {
   margin-top: 100px;
-  background-color: #eceae8;
+  background-color: #7e3454;
   width: 80vw;
   height: 30vh;
   z-index: -100;
@@ -32,14 +43,14 @@
   margin-right: auto;
 }
 .alternate-gray-back {
-  background-color: #eceae8;
+  background-color: #7e3454;
   width: 50vw;
   height: 100vh;
   z-index: -100;
   position: relative;
-  border: 1px solid rebeccapurple;
+  /* border: 1px solid rebeccapurple; */
   position: absolute;
-  margin-top: 300px;
+  margin-top: 400px;
   /* animation: grow-left 1s ease forwards; */
   /* transform: scaleX(0); */
   /* transform-origin: left; */
@@ -74,17 +85,67 @@
   padding: 20px;
   margin: 20px;
 }
-.fullscreenImg {
+.hero-img-background {
+  /* border: 3px solid aqua; */
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("https://miro.medium.com/max/1400/1*OPly9ITyBrFpA_rxgYsbXQ.png")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  animation: hero 4s ease forwards;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+.ugh {
+  border: 5px solid orangered;
+}
+.chungus {
+  display: flex;
+  justify-content: center;
+}
+.header1 {
+  position: relative;
+}
+.header1-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+.header1-text {
+  position: relative;
+  z-index: 1;
+}
+.container img {
+  animation: hero 4s ease forwards;
+}
+.container:before {
+  border: 2px solid wheat;
+}
+/* :not(.centered) {
+  animation: hero 4s ease forwards;
+} */
+.fullScreenImg {
   /* border: 10px solid red; */
   /* Full height */
   height: 100vh;
-  width: 100vw;
-  aspect-ratio: 16 / 9;
+  width: 100%;
+  /* aspect-ratio: 16 / 9; */
+  background: url("https://images.pexels.com/photos/15057495/pexels-photo-15057495.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    no-repeat center center fixed;
+  /* -webkit-background-size: cover; */
   animation: hero 4s ease forwards;
   /* Center and scale the image nicely */
   /* background-position: center;
   background-repeat: no-repeat; */
   background-size: cover;
+  z-index: -999;
   animation: hero 4s ease forwards;
   /* transform: scale(2);
   transition: 5s forwards; */
@@ -116,10 +177,10 @@ img {
   justify-content: space-around;
   margin-bottom: 100px;
   text-align: left;
-  color: #001a66;
+  color: #292961;
 }
 .filmWheelPic {
-  /* border: 3px solid red; */
+  border: 3px solid rebeccapurple;
   width: 50%;
   margin-top: -300px;
 }
@@ -151,6 +212,6 @@ div {
   margin-top: 200px;
 }
 main {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   position: relative;
 }

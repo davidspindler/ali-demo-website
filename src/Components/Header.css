@@ -1,0 +1,26 @@
+.centered {
+  /* border: 1px solid red; */
+  /* position: absolute; */
+  position: absolute;
+  z-index: 1;
+  /* top: 50%;
+  left: 30%; */
+  text-align: center;
+  width: 100vw;
+  top: 30%;
+}
+h1 {
+  font-size: 5rem;
+  color: white;
+}
+p {
+  color: white;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+footer {
+  margin-top: 150px;
+}

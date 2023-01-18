@@ -1,0 +1,22 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  z-index: 50;
+  position: fixed;
+  height: 110px;
+}
+.navbar__logo {
+  font-size: 1rem;
+  cursor: pointer;
+}
+.navbar__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navbar__links > li {
+  padding-left: 1.5rem;
+}

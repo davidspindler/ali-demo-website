@@ -1,6 +1,11 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import AOS from "aos";
+import Navbar from "./Components/Navbar";
+import Header from "./Components/Header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Photos from "./Screens/Photos";
+import About from "./Screens/About";
 function App() {
   AOS.init();
   const [offsetY, setOffsetY] = useState(0);
@@ -10,15 +15,33 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className="App">
-      <img
-        className="fullscreenImg"
-        src="https://images.squarespace-cdn.com/content/v1/576ef902d1758ef2e6dada3d/1596518960801-WBVKZGY3ILNO9WTDILT7/65b.jpg?format=2500w"
-        alt="beautiful mountians over lake with clouds pink"
-        // data-aos="zoom-out"
-        // data-aos-duration="3000"
-      />
-      {/* <header>The 102 Creative</header> */}
+    <Router>
+      <div className="App">
+        {/* <Navbar /> */}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <div className="hero-img-background"></div>
+                <Header />
+              </>
+            }
+          ></Route>
+
+          {/* <div className="fullScreenImg"></div> */}
+          {/* <header>The 102 Creative</header> */}
+          {/* <Header /> */}
+          <Route exact path="/photos" element={<Photos />}></Route>
+          <Route exact path="/about" element={<About />}></Route>
+        </Routes>
+      </div>
+      {/* <header class="header1">
+        <div class="header1-background"></div>
+        <div class="header1-text">
+          <h1>Welcome to the Milky Way</h1>
+        </div>
+      </header>
       <div
         className="gray-back"
         style={{
@@ -32,7 +55,13 @@ function App() {
           data-aos="fade-up"
           data-aos-duration="1500"
         >
-          <img src={"/filmwheel.png"} alt="" className="filmWheelPic" />
+          <img
+            src={
+              "https://images.pexels.com/photos/13914970/pexels-photo-13914970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+            alt=""
+            className="filmWheelPic"
+          />
           <div className="aboutMe">
             <div className="aboutMeHeaderText">About Me</div>
             <div className="aboutMeDescription">
@@ -92,8 +121,9 @@ function App() {
         </div>
         <div></div>
       </main>
-      <div className="oswald">helo this should be oswald text</div>
-    </div>
+      <div className="oswald">helo this should be oswald text</div> */}
+      {/* </div> */}
+    </Router>
   );
 }
 
