@@ -168,19 +168,19 @@
   /* margin: 0; */
   /* padding: 0; */
 }
-img {
+/* img {
   z-index: 999 !important;
-}
+} */
 .filmWheelAndAboutMe {
   display: flex;
-  border: 3px solid black;
+  /* border: 3px solid black; */
   justify-content: space-around;
   margin-bottom: 100px;
   text-align: left;
   color: #292961;
 }
 .filmWheelPic {
-  border: 3px solid rebeccapurple;
+  /* border: 3px solid rebeccapurple; */
   width: 50%;
   margin-top: -300px;
 }

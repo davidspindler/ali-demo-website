@@ -20,7 +20,21 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: white;
+  margin-top: 500px;
 }
 footer {
   margin-top: 150px;
+}
+.btn {
+  background-color: transparent;
+  padding-top: 200px;
+  font-size: 9px;
+  color: #fff;
+  border: 1px solid white;
+  transition: color 170ms ease-in-out, border-color 170ms ease-in-out;
+  padding: 14px;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
 }

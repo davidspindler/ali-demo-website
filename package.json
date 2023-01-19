@@ -6,13 +6,24 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/node": "^18.11.18",
     "aos": "^2.3.4",
+    "blurhash": "^2.0.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
     "react": "^18.1.0",
+    "react-blurhash": "^0.3.0",
     "react-dom": "^18.1.0",
+    "react-lazy-load-image-component": "^1.5.6",
     "react-router-dom": "^6.6.2",
     "react-scripts": "5.0.1",
     "sass": "^1.57.1",
     "scss": "^0.2.4",
+    "sharp": "^0.31.3",
+    "styled-components": "^5.3.6",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -38,5 +49,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/sharp": "^0.31.1"
   }
 }
