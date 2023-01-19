@@ -34,7 +34,7 @@ const Photos = () => {
   ];
   return (
     <div>
-      <nav>
+      {/* <nav className="navbar">
         <div>
           <div>
             <div>
@@ -56,8 +56,24 @@ const Photos = () => {
             </div>
           </div>
         </div>
-      </nav>
-      <div>
+      </nav> */}
+      <header>
+        <h1 id="nav-title">
+          <a href="">Ali Mohamed</a>
+        </h1>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li></li>
+          </ul>
+        </nav>
+      </header>
+      <div className="booga">
         <Masonry imageUrls={imageUrls} columnCount="3" gap="8"></Masonry>
       </div>
     </div>
