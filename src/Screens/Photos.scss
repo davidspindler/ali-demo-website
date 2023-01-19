@@ -5,3 +5,51 @@
   margin: 0;
   padding: 0;
 }
+// .navbar {
+//   border: 1px dashed blue;
+//   width: 100%;
+//   display: flex;
+//   flex-direction: row;
+
+//   justify-content: space-between;
+//   align-items: center;
+//   // padding: 1rem 1rem;
+//   z-index: 50;
+//   height: 110px;
+// }
+@media only screen and (min-width: 600px) {
+  .booga {
+    // border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+  }
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 1px 8px #ddd;
+  margin-bottom: 2rem;
+}
+
+#nav-title {
+  margin-right: auto;
+  font-size: 1.5em;
+}
+
+header li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: #555;
+  transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+  color: #b2dfdb;
+}
